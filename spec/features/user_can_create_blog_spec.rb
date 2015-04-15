@@ -9,6 +9,9 @@ RSpec.describe "User creates a blog" do
       click_button "Create Article"
       expect(page).to have_content('This is my first blog')
       expect(page).to have_content('Here is the content')
+      within("div.flash") do
+        expect(page).to have_content("'This is my first blog has been created!'")
+      end
     end
   end
 end

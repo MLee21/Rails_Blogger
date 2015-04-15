@@ -353,7 +353,9 @@ h4 {
     background: #f5f5f5;
     padding: 1em 0;
     border-bottom: 1px dashed #ddd;
-    color: #6c7c9a
+    color: #6c7c9a;
+    border-radius: 5px;
+    padding: 10px;
 }
 .comment p {
     padding-left: 12px;
@@ -484,7 +486,7 @@ a.new_article:active,
     font-weight: bold;
     display: block;
     color: #2d4159;
-    padding-bottom: .1em
+    padding-bottom: .1em;
 }
 #articles .actions {
     border-left: 1px dotted #ddd;
@@ -492,23 +494,24 @@ a.new_article:active,
     margin-left: 3px;
     line-height: 1em;
     position: relative;
-    top: 2px
+    top: 2px;
 }
 #articles .actions a {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=20);
-    opacity: 0.2
+    /*filter:; */
+    /*progid: DXImageTransform.Microsoft.Alpha(Opacity=20);*/
+    opacity: 0.2;
 }
 #articles .actions a:hover {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=40);
-    opacity: 0.4
+    /*filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=40);*/
+    opacity: 0.4;
 }
 #articles .tag_list {
     display: inline-block;
     font-size: .8em;
     padding-top: .5em;
-    color: #999
+    color: #999;
 }
 .article_actions {
     border-bottom: 1px dashed #ddd;
@@ -517,7 +520,7 @@ a.new_article:active,
     font-size: .9em;
     overflow: hidden;
     *zoom: 1;
-    text-align: right
+    text-align: right;
 }
 .article_actions a {
     float: left;
@@ -525,12 +528,12 @@ a.new_article:active,
 }
 .article_actions a:hover img {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=60);
+    /*filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=60);*/
     opacity: 0.6
 }
 .article_actions img {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=20);
+    /*filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=20);*/
     opacity: 0.2;
     position: relative;
     top: 2px
@@ -707,4 +710,8 @@ div.flash.success {
 div.flash.error {
   border: 2px solid red; color: red;
   font-size: 1.25em;
+}
+
+p.date.created {
+    color: green;
 }
