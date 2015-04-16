@@ -1,0 +1,14 @@
+<h1>All Tags</h1>
+
+<ul id="tags">
+  <% @tags.each do |tag| %>
+  <li>
+   <p class="tag link"> 
+    <%= link_to tag.name, tags_path(tag) %>
+  </p>
+  <p class="delete_button">
+    <%= button_to "Delete", tag_path(tag), method: :delete, data: {confirm: "Are you sure you would like to delete this article?"} %>
+  </p>
+  </li>
+  <% end %>
+</ul>
